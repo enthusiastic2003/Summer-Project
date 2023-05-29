@@ -1,3 +1,3 @@
 function redirect() {
-    window.open("http://google.com", "_blank")
+    window.open("/page1", "_blank")
 }
