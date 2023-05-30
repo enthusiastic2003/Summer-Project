@@ -8,6 +8,21 @@
     <link rel="stylesheet" href="../static/css/page1.css">
 </head>
 <body>
-    
+    <div class="upload">
+        <h2 class = "head">Upload the dataset</h2>
+        <form action="/upload" method = "POST" enctype = "multipart/form-data">
+                
+                <input type="file" name="file" id="file" class="file" accept = ".csv">
+                <input type="submit" value="Upload" class="submit">
+            
+        </form>
+    </div>
+
+    {% if message %}
+    <div id="success-message">
+      <p>{{ message }}</p>
+    </div>
+  {% endif %}
+  
 </body>
 </html>
