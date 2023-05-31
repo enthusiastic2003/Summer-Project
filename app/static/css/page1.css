@@ -98,3 +98,20 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     
 }
+
+.done {
+    position: absolute;
+    background-color: rgba(30, 255, 203, 0.177);
+    color: dodgerblue;
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid dodgerblue;
+    border-radius: 20px;
+    width: 350px;
+    height: 100px;
+    left: 68.2%;
+    top: 45%;
+    padding: 10px;
+    text-align: center;
+    transition-duration: 2s;
+}
