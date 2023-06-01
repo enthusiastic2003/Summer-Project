@@ -1,12 +1,8 @@
-from flask import Flask, render_template, request, g
+from flask import Flask, render_template, request, g, redirect, url_for, session
 import pandas as pd
 import numpy as np
+import time
 app = Flask(__name__ )
-
-#declaring the global variable for dataset
-@app.before_request
-def before_request():
-    g.dataset = None;
 
 #home page
 @app.route("/")
@@ -21,15 +17,22 @@ def page1():
 #uploading the dataset
 @app.route("/upload", methods = ["POST"])
 def upload():
+    global df
     if request.method == "POST":
         file = request.files["file"]
         if file:
-            g.dataset = pd.read_csv(file)
-            return render_template("firstpage.html", message = "Dataset uploaded successfully")
+            df = pd.read_csv(file)
+            return redirect(url_for("page2")) 
         else:
             return render_template("firstpage.html", message = "Dataset not uploaded")
         
-        
-
+#second page for displaying the dataset
+@app.route("/page2")
+def page2():
+    if df is not None:
+        return render_template("secondpage.html", dataset = df.to_html())
+    else:
+        return render_template("secondpage.html", dataset = "Dataset not uploaded")
+    
 if __name__=="__main__":
     app.run(host="0.0.0.0")
