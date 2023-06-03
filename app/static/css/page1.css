@@ -115,3 +115,25 @@ body {
     text-align: center;
     transition-duration: 2s;
 }
+
+.success {
+    position: absolute;
+    left: 71.6%;
+    top: 87%;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: antiquewhite;
+    border: 3px solid dodgerblue;
+    width: 250px;
+    height: 70px;
+    
+    transition-duration: 2s;
+    transition-property: color, background-color;
+    padding: 10px;
+    
+}
+
+.success:hover {
+    background-color: BLACK;
+    color: white;
+}

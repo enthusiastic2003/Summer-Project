@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("../images/Vector_2640.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250vh;
+    background-position: right;
+}    
+
+.first {
+    position: absolute;
+    
+    top: 1%;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(9, 9, 243, 0.262);
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid dodgerblue;
+
+}
+
+.data {
+    position: sticky;
+    cursor: pointer;
+    left: 90%;
+    top: 1%;
+    padding: 20px;
+    font-size: 30px;
+    font-family: inherit;
+    background-color: #232c335d;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid dodgerblue;
+}

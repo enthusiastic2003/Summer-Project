@@ -22,17 +22,26 @@ def upload():
         file = request.files["file"]
         if file:
             df = pd.read_csv(file)
-            return redirect(url_for("page2")) 
+            time.sleep(5)
+            return render_template("uploadsuccess.html", message = "Dataset Uploaded Successfully")
         else:
             return render_template("firstpage.html", message = "Dataset not uploaded")
         
-#second page for displaying the dataset
-@app.route("/page2")
+#main page
+@app.route("/main")
+def main():
+    return render_template("main.html")        
+
+#page for displaying the dataset
+@app.route("/dset")
 def page2():
     if df is not None:
-        return render_template("secondpage.html", dataset = df.to_html())
+        return render_template("dataset.html", dataset = df.to_html())
     else:
-        return render_template("secondpage.html", dataset = "Dataset not uploaded")
-    
+        return render_template("dataset.html", dataset = "Dataset not uploaded")
+
+
+
+
 if __name__=="__main__":
     app.run(host="0.0.0.0")
