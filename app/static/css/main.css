@@ -10,23 +10,34 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-image: url("../images/Vector_2640.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 250vh;
+    background-repeat: repeat;
+    background-size: cover; 
+    height: 350vh;
     background-position: right;
 }    
 
-.first {
-    position: absolute;
+
+
+
+
+
+
+.container {
+    display: flex;
     
-    top: 1%;
-    font-size: 15px;
-    font-weight: bold;
-    color: white;
-    background-color: rgba(9, 9, 243, 0.262);
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
     padding: 20px;
-    border-radius: 5px;
-    border: 2px solid dodgerblue;
+    font-size: 30px;
+    /* background: linear-gradient(to right, #daef1d, #08a0ff); */
+    background-color: #0e14288d;
+    color: #D6D6B1;
+
 
 }
 
@@ -42,4 +53,49 @@ body {
     color: white;
     border-radius: 5px;
     border: 2px solid dodgerblue;
+}
+
+.first {
+    /*This is child of above container lets design it */
+
+    height: auto;
+    
+    color: white;
+    
+
+    
+}
+
+.tools {
+    display: flex;
+    flex-direction: row;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding: 20px;
+    /* background: linear-gradient(to right, #daef1d6b, #08a0ff76); */
+    
+    /*Space between columns*/
+    justify-content: space-between;
+    
+}
+
+.fundamentals {
+    background-color: #CC2936;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+
+.intermediate {
+    background-color: #0A0908;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+
+.advanced {
+    background-color: #613F75;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
 }
