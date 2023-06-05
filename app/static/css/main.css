@@ -99,3 +99,17 @@ body {
     padding: 10px;
     color: white;
 }
+
+.fundamentaltools {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.feature1 {
+    background-color: aqua;
+}
+
