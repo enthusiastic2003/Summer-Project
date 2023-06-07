@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import time
 app = Flask(__name__ )
+app.debug = True
 
 #home page
 @app.route("/")
