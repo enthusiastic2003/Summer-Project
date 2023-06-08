@@ -49,16 +49,14 @@ body {
     padding: 9px;
     cursor: pointer;
     border-radius: 20px;
-   
-
-    transition-duration: 2s;
-    transition-property: background-color, color;
+    
 }
 
 .start:hover
  {
     background-color: rgba(7, 8, 1, 0.245);
     color: dodgerblue;
+    transition: 1s;
 }
 
 

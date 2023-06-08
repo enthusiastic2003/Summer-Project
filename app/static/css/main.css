@@ -6,154 +6,158 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: url("../images/Vector_2640.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; 
-    height: 300vh;
-    background-position: right;
-    background: linear-gradient(to bottom, #23323d, #041b65)
-}    
-
-
-
-
+    min-height: 170vh;
+    width: auto;
+    background: linear-gradient(to bottom, #23323d, #041b65);
+}
 
 
 
 .container {
     display: flex;
-    
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-    
-    
-    padding: 20px;
-    font-size: 40px;
-    /* background: linear-gradient(to right, #daef1d, #08a0ff); */
-    background-color: #0e14288d;
-    color: #D6D6B1;
-    border: 2px white solid;
-
-
-}
-
-.python {
-    position: absolute;
-    top: 17px;
-    right: 20px;
-    width: 100px;
-    height: 100px;    
-    color: #D6D6B1;
-    padding: 10px;
-    background-color: whitesmoke;
-    border-radius: 50%;   
-}
-
-
-
-.data {
-    position: sticky;
-    cursor: pointer;
-    top: 20px;
-    padding: 20px;
-    font-size: 30px;
-    font-family: inherit;
-    background-color: #232c335d;
-    color: white;
-    border-radius: 5px;
-    border: 2px solid dodgerblue;
-    /*Now i will move this sticky button on right of page */
-    left: 90%;
-}
-
-.first {
-    /*This is child of above container lets design it */
-
-    height: auto;
-    
-    color: white;
-    
-
-    
-}
-
-.tools {
-    
-    display: flex;
-    flex-direction: row;
-
-    justify-content: space-between;
-    position: absolute;
-    width: 80%;
-    left: 35px;
-    top: 150px;
     /* border: 2px solid white; */
-   
-}
-
-.fundamentals {
-    background-color: #FDFFFF;
-    border-radius: 5px;
-    padding: 10px;
-    color: white;
-}
-
-.funda {
-    background-color: #280000;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.intermediate {
-    background-color: #FACFAD;
-    border-radius: 5px;
-    padding: 10px;
-    color: white;
-}
-
-.inter {
-    background-color: rgb(12, 4, 255);
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.advanced {
-    background-color: #0A0908;
-    border-radius: 5px;
-    padding: 10px;
-    color: white;
-}
-
-.adv {
-    background-color: rgb(255, 25, 4);
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-
-.fundamentaltools {
-    display: flex;
-    flex-direction: column;
-    margin-left: 8%;
-    margin-right: 8%;
-    padding: 20px;
-    justify-content: space-around;
-}
-
-.feature1 {
-    background-color: aqua;
+    min-height: 150vh;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
 }
 
 .check {
-    position: absolute;
-    right: 0;
-    height: 280vh;
+
     border: 2px solid white;
-    width: 232px;
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+}
+
+.heading {
+    border: 2px solid white;
+    position: absolute;
+    background-color: #190B28;
+    color: #EE6C4D;
+    width: 100%;
+    height: 150px;
+    font-size: 50px;
+}
+
+.head {
+    position: absolute;
+    left: 100px;
+    top: 8px;
+}
+  
+
+.pylogo {
+    border: 2px solid white;
+    
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+
+.pylogo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.datascienceimage {
+    border: 2px solid rgb(11, 251, 59);
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    position: absolute;
+    top: 200px;
+    right: 0px;
+    background-color: aliceblue;
+}
+
+.datascienceimage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.datascienceimage2 {
+    border: 2px solid rgb(7, 238, 169);
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    background-color: #5F4BB6;
+}
+
+.datascienceimage2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.datascienceimage3 {
+    border: 2px solid rgb(65, 7, 238);
+    width: 330px;
+    height: 600px;
+    overflow: hidden;
+    position: absolute;
+    top: 200px;
+    left: 601.5px;
+    background-color: #E7EB90;
+}
+
+.datascienceimage3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ready {
+    border: 2px solid rgb(238, 7, 7);
+    width: 1200px;
+    height: 220px;
+    overflow: hidden;
+    position: absolute;
+    top: 830px;
+    left: 150px;
+    background-color: #FF6B6B;
+}
+
+.ready img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.start {
+   
+    width: 500px;
+    height: 100px;
+    font-size: 60px;
+    font-family: inherit;
+    overflow: hidden;
+    position: absolute;
+    top: 1120px;
+    left: 460px;
+    background-color: #271033;
+    color: #FFFD77;
+    cursor: pointer;
+    border: 2px solid #FFFD77;
+}
+
+.start:hover {
+    background-color: #FFFD77;
+    color: #271033;
+    border: 2px solid dodgerblue;
+    transition: 1s;
 }
