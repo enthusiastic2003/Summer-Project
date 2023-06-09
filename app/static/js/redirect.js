@@ -12,3 +12,12 @@ function reachmain() {
     window.open("/main", "_blank");
 }
 
+function show_main1() {
+    window.location.href = "/main_1";
+}
+
+function checkshape() {
+    window.location.href = "/shape";
+}
+
+

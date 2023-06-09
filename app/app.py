@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, g, redirect, url_for, session
+from flask import Flask, render_template, request
 import pandas as pd
 import numpy as np
 import time
@@ -27,10 +27,15 @@ def upload():
         else:
             return render_template("firstpage.html", message = "Dataset not uploaded")
         
-#main page
+#main intro page
 @app.route("/main")
 def main():
-    return render_template("main.html")        
+    return render_template("main.html") 
+
+# main page with features
+@app.route("/main_1")
+def main_1():
+    return render_template("main_1.html")       
 
 #page for displaying the dataset
 @app.route("/dset")
@@ -40,6 +45,12 @@ def page2():
     else:
         return render_template("dataset.html", dataset = "Dataset not uploaded")
 
+@app.route("/shape")
+def shape():
+    rc = df.shape
+    rows = rc[0]
+    columns = rc[1]
+    return render_template("main_1.html",shape = f"Rows: {rows} Columns: {columns}")
 
 
 
