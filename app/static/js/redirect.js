@@ -16,8 +16,15 @@ function show_main1() {
     window.location.href = "/main_1";
 }
 
+
 function checkshape() {
     window.location.href = "/shape";
+}
+
+
+
+function check_misses() {
+    window.location.href = "/miss";
 }
 
 
